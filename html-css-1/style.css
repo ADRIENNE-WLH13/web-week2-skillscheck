@@ -1,0 +1,101 @@
+
+
+#header { 
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(112, 112, 112);
+  color: whitesmoke;
+  height: 50px;
+}
+
+#logo {
+  margin-left: 30px;
+  font-size: 26px;
+  font-weight: 100;
+  letter-spacing: 2px;
+
+}
+
+#nav-links {
+  display: flex;
+  width: 250px;
+  justify-content: space-evenly;
+  font-size: 12px;
+}
+
+.nav-link {
+ font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+#body {
+  height: 90vh;
+}
+
+#black-space {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 250px;
+  background-color: black;
+  color: rgb(255, 255, 74);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#seafoam-boxes {
+  height: 225px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.seafoam-box {
+  height: 175px;
+  width: 175px;
+  background-color: rgb(89, 255, 219);
+  border-radius: 15px
+}
+
+#tangerine-boxes {
+  height: 170px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tangerine-box {
+  height: 150px;
+  width: 300px;
+  background-color: rgb(250, 190, 78);
+ 
+}
+
+#content-boxes {
+  height: 170px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#gibberish {
+  font-size: 11px;
+  height: 100px;
+  width: 250px;
+
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+
+#footer { 
+  background-color: rgb(50, 43, 87);
+  height: 100px;
+}

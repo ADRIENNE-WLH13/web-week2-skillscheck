@@ -29,11 +29,9 @@ function code(lovesCode){
     if(lovesCode === true){
         return 'I love code';
     } else {
-        if(lovesCode !== true){
         return 'I do not love to code'
         }
-    }
-};
+    };
 
 //////////////////Wrap Up////////////////////
 // Refresh the index.html page in your browser. You should now see a poem that uses the variables from above.

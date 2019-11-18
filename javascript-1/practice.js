@@ -118,18 +118,13 @@ function bigOrSmall (arr){
 
 // Create a function called 'arrayReverser' that takes in one parameter, arr. Inside of arrayReverser, create an empty array called 'reversed'. Using a for loop, loop over the passed in array in reverse and add each item to the new reversed array. Finally, return the new reversed array
 
-// function arrayReverser(arr){
-// 	let reversed = [];
-// } for(let i = arr.length-1; i >= 0; i--){
-// 	reversed.push(arr[i]);
-// }return reversed;
-
-// function arrayReverser (arr){
-// 	let reversed = [];
-// 	for(let i = arr.length -1; i >= 0; i--){
-// 		reversed.push(arr)
-// 	}
-// }return reversed;
+const arrayReverser = arr => {
+	const reversed = []
+	for( i = arr.length - 1; i >= 0; --i) {
+		reversed.push(arr[i])
+	}
+	return reversed
+}
 
 
 
@@ -166,12 +161,11 @@ let total = myNumbers.reduce((acc, el) => {
 //////////////////PROBLEM 17////////////////////
 
 // Last, lets use .forEach to find the index of each item in the array. First, create an empty array called myNumbersIndex. Next, using forEach, push each items index from the myNumbers array to the myNumbersIndex array
+const myNumbersIndex = []
 
-let myNumbersIndex = [];
+myNumbers.forEach(cb = (value, i) => myNumbersIndex.push(i))
 
-myNumbers.forEach((el) => {
-	myNumbersIndex.push(myNumbers);
-});
+
 
 //////////////////PROBLEM 18////////////////////
 
@@ -201,5 +195,5 @@ let enemies = people.filter(name => name.friend === false);
 
 // Using the people array above, let's get a total of the awesomeLevel from all the people. Call the new array 'totallyAwesome'. Use .reduce()
 
-let totallyAwesome = people.awesomeLevel.reduce((total, el) => total += el, 0);
+const totallyAwesome = people.reduce((acc, curr) => acc + curr.awesomeLevel, 0)
 
